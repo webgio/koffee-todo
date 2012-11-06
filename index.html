@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="http://learn.knockoutjs.com//Content/TutorialSpecific/loadingsaving.css">
+	<link rel="stylesheet" type="text/css" href="http://learn.knockoutjs.com/Content/App/coderunner.css">
+	<SCRIPT TYPE="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></SCRIPT>
+	<SCRIPT TYPE="text/javascript" src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.1.0.js"></SCRIPT>
+</head>
+<body class="codeRunner">
+
+    <h3>Tasks</h3>
+    
+    <form data-bind="submit: addTask">
+        Add task: <input data-bind="value: newTaskText" placeholder="What needs to be done?" />
+        <button type="submit">Add</button>
+    </form>
+    
+    <ul data-bind="foreach: tasks(), visible: tasks().length > 0">
+        <li>
+            <input type="checkbox" data-bind="checked: isDone" />
+            <input data-bind="value: title, disable: isDone()" />
+            <a href="#" data-bind="click: $parent.removeTask">Delete</a>
+        </li> 
+    </ul>
+    
+    You have <b data-bind="text: incompleteTasks().length">&nbsp;</b> incomplete task(s)
+    <span data-bind="visible: incompleteTasks().length == 0"> - it's beer time!</span>
+    
+    <button data-bind="click: save">Save</button>
+    
+<SCRIPT TYPE="text/javascript" src="index.js"></SCRIPT></body>​
+</html>
