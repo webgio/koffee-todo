@@ -56,7 +56,7 @@
             type: "POST",
             dataType: 'jsonp',
             success: function(result) {
-              return alert(ko.toJSON(result.json));
+              return toastr.success('Tasks saved!', result.json);
             }
           });
         },

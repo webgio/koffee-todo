@@ -34,7 +34,7 @@ TaskListViewModel = -> do (_newTaskText = ko.observable(''), _tasks = ko.observa
         $.ajax "http://jsfiddle.net/echo/jsonp/", 
         data: {json: ko.toJSON(_tasks)}, 
         type: "POST", dataType: 'jsonp', 
-        success: (result) => alert ko.toJSON(result.json)     
+        success: (result) => toastr.success('Tasks saved!', result.json)
     
     # Load initial state from server, then populate @tasks
     load: => 

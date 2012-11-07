@@ -1,0 +1,163 @@
+/* #FFEFBD; */
+html {
+  height: 100%;
+}
+body {
+  font-size: 1em;
+  font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+  color: dimgray;
+  background-color: #a7c4dd;
+  background-image: url("images/bg_241062.png");
+  /* bg_CEDFEE_CEDFEE */
+  height: 100%;
+}
+header,
+footer,
+nav,
+section {
+  display: block;
+}
+header {
+  /*background: @header-bgcolor url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAyCAYAAACd+7GKAAAAJklEQVQIW2P4//+/NxMDA8N/JgYGhn+oLDQu7Vk/GP4zMXDQx3IA0To1YWcEwtQAAAAASUVORK5CYII=") repeat-x;
+	
+	*/
+  background-color: #6895ba;
+  background-image: url("/Content/Images/bg_241065.png");
+  color: dimgray;
+  border-bottom: 2px solid #2b475e;
+}
+#header-content {
+  width: 960px;
+  margin: auto;
+  color: #ffefbd;
+  overflow: hidden;
+}
+#header-content h1 {
+  font-size: 34px;
+  display: inline;
+  float: left;
+  margin: 0;
+  margin-bottom: 3px;
+  padding: 0;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.5);
+}
+#header-content #menu {
+  float: left;
+  margin: 0;
+  margin-top: 6px;
+}
+#header-content #menu ul {
+  list-style-type: none;
+  padding-left: 0;
+  padding-top: 0px;
+}
+#header-content #menu li {
+  display: inline;
+}
+#header-content #menu li a {
+  color: #7a2f0e;
+  background: #dd855d url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAyCAYAAACd+7GKAAAAJklEQVQIW2P4//+/NxMDA8N/JgYGhn+oLDQu7Vk/GP4zMXDQx3IA0To1YWcEwtQAAAAASUVORK5CYII=") repeat-x;
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 1px 1px #f3b194;
+  font-weight: bold;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin: 3px;
+}
+#header-content #menu li a:hover {
+  background: #ddbe5d url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAyCAYAAACd+7GKAAAAJklEQVQIW2P4//+/NxMDA8N/JgYGhn+oLDQu7Vk/GP4zMXDQx3IA0To1YWcEwtQAAAAASUVORK5CYII=") repeat-x;
+}
+button {
+  color: #7a2f0e;
+  background: #dd855d url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAyCAYAAACd+7GKAAAAJklEQVQIW2P4//+/NxMDA8N/JgYGhn+oLDQu7Vk/GP4zMXDQx3IA0To1YWcEwtQAAAAASUVORK5CYII=") repeat-x;
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 1px 1px #f3b194;
+  font-weight: bold;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin: 3px;
+}
+button:hover {
+  background: #ddbe5d url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAyCAYAAACd+7GKAAAAJklEQVQIW2P4//+/NxMDA8N/JgYGhn+oLDQu7Vk/GP4zMXDQx3IA0To1YWcEwtQAAAAASUVORK5CYII=") repeat-x;
+}
+#login-display {
+  float: none;
+  width: 100%;
+  text-align: right;
+}
+#login-display a {
+  color: #7a2f0e;
+}
+#content {
+  width: 960px;
+  margin: auto;
+  margin-top: 12px;
+  background-color: white;
+  overflow: hidden;
+  padding: 12px;
+  border: 1px solid #ababab;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+#content h1 {
+  color: #0b2f4f;
+  /* text-shadow: 0 1px rgba(0, 0, 0, .5); */
+
+}
+/* Styles for basic forms
+-----------------------------------------------------------*/
+
+fieldset {
+  border: 1px solid #dddddd;
+  padding: 0 1.4em 1.4em 1.4em;
+  margin: 0 0 1.5em 0;
+}
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+textarea {
+  min-height: 75px;
+}
+.editor-label {
+  margin: 1em 0 0 0;
+}
+.editor-field {
+  margin: 0.5em 0 0 0;
+}
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+
+.field-validation-error {
+  color: red;
+}
+.field-validation-valid {
+  display: none;
+}
+.input-validation-error {
+  border: 1px solid red;
+  background-color: #ffeeee;
+}
+.validation-summary-errors {
+  font-weight: bold;
+  color: red;
+}
+.validation-summary-valid {
+  display: none;
+}
