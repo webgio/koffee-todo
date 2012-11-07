@@ -55,7 +55,7 @@
               type: "POST",
               dataType: 'jsonp',
               success: function(result) {
-                return toastr.success('Tasks saved!', result.json);
+                return toastr.success(result.json, 'Tasks saved!');
               }
             });
           },

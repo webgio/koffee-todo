@@ -36,7 +36,7 @@ define 'appViewModel', ['../lib/knockout-2.2.0','toastr'], (ko, toastr) ->
             $.ajax "http://jsfiddle.net/echo/jsonp/", 
             data: {json: ko.toJSON(_tasks)}, 
             type: "POST", dataType: 'jsonp', 
-            success: (result) => toastr.success('Tasks saved!', result.json)
+            success: (result) => toastr.success result.json, 'Tasks saved!'
         
         # Load initial state from server, then populate @tasks
         load: => 
