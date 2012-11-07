@@ -1,6 +1,6 @@
 define 'appViewModel', ['../lib/knockout-2.2.0','toastr'], (ko, toastr) ->
 
-    window.fakeData = [{
+    fakeData = [{
         "title": "Wire the money to Panama",
         "isDone": true},
     {
@@ -39,10 +39,9 @@ define 'appViewModel', ['../lib/knockout-2.2.0','toastr'], (ko, toastr) ->
             success: (result) => toastr.success result.json, 'Tasks saved!'
         
         # Load initial state from server, then populate @tasks
-        load: => 
-            #$.ajax "http://respondto.it/ko-coffee-todo",         
+        load: =>        
             $.ajax "http://jsfiddle.net/echo/jsonp/", 
-            data: {json: ko.toJSON(window.fakeData)}, 
+            data: {json: ko.toJSON(fakeData)}, 
             type: "POST", dataType: 'jsonp',
             success: (data) => _tasks.push task(item) for item in $.parseJSON(data.json)
             return

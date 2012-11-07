@@ -2,8 +2,8 @@
 (function() {
 
   define('appViewModel', ['../lib/knockout-2.2.0', 'toastr'], function(ko, toastr) {
-    var appViewModel, task;
-    window.fakeData = [
+    var appViewModel, fakeData, task;
+    fakeData = [
       {
         "title": "Wire the money to Panama",
         "isDone": true
@@ -62,7 +62,7 @@
           load: function() {
             $.ajax("http://jsfiddle.net/echo/jsonp/", {
               data: {
-                json: ko.toJSON(window.fakeData)
+                json: ko.toJSON(fakeData)
               },
               type: "POST",
               dataType: 'jsonp',
